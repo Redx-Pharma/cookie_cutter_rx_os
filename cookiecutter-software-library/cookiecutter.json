@@ -1,0 +1,9 @@
+{
+    "project_name": "Software_library_project",
+    "pkgname": "{{ cookiecutter.project_name|lower|replace('-', '')|replace('_','') }}",
+    "summary": "one line for readme summary line",
+    "description": "short description",
+    "author": "author name",
+    "email": "myemail@domain.com",
+    "python_version": ">=3.10,<4.0"
+}

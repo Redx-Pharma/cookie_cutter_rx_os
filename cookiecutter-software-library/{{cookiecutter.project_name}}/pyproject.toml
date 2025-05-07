@@ -1,0 +1,30 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools>=63.2.0",
+    "wheel>=0.37.1",
+]
+
+[project]
+name = "{{cookiecutter.pkgname}}"
+version = "0.0.1"
+authors = [
+    {name = "{{cookiecutter.author}}"},
+]
+description = "{{cookiecutter.description}}"
+requires-python = "{{cookiecutter.python_version}}"
+classifiers = [
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+]
+
+# The versions set are the ones used for the original install on Mac OS so should work if pinned to only those versions i.e. >= --> ==
+dependencies = [
+    "numpy>=1.24.4",
+    "pytest>=7.4.4",
+    "pandas>=2.0.0",
+    "pre-commit>=3.5.0",
+    "pdocs>=1.2.0",
+]
+
